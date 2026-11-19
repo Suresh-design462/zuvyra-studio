@@ -1,0 +1,6 @@
+{
+  "name": "ZUVYRA",
+  "description": "Professional offline native Android video editing studio developed by Suresh Didel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

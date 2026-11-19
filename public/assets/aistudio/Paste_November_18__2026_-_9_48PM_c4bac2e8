@@ -1,0 +1,1529 @@
+# MASTER DEVELOPMENT PROMPT
+# ZUVYRA – PROFESSIONAL ANDROID VIDEO EDITOR
+
+**Developer:** SURESH DIDEL  
+**Application Name:** ZUVYRA  
+**Application Type:** Professional Native Android Video Editing Studio  
+**Minimum Android Version:** Android 13 (API 33)  
+**Target:** Android 13 and newer supported versions  
+**Development Platform:** Google AI Studio – Build Android App  
+**Primary Language:** Kotlin  
+**UI Framework:** Jetpack Compose  
+**Design Philosophy:** Premium, Professional, Fast, Clean, Offline and User-Friendly
+
+---
+
+# 1. PROJECT OVERVIEW AND OBJECTIVE
+
+Act as a senior Android application architect, professional video-editing software engineer, Kotlin developer, UI/UX designer, media-processing specialist and performance optimization engineer.
+
+Your task is to design and develop a complete, highly advanced, professional-grade native Android video editing application named **ZUVYRA**.
+
+ZUVYRA should combine the most useful and practical video-editing capabilities found in professional mobile applications such as:
+
+- Alight Motion
+- KineMaster
+- CapCut
+- InShot
+- VN Video Editor
+
+However, ZUVYRA must have its own original identity, original interface, original design system and independent implementation.
+
+This is a personal-use application developed exclusively for its owner, SURESH DIDEL.
+
+The application must not depend on any online service, subscription, account, registration, cloud storage, advertising network or external server.
+
+**The objective is to create a complete, genuinely functional offline video-editing studio, not a UI prototype or a collection of non-functional buttons.**
+
+Every feature must perform its actual intended operation.
+
+Do not create fake functionality, placeholder buttons, simulated exports or decorative editing controls.
+
+---
+
+# 2. ABSOLUTE DEVELOPMENT REQUIREMENTS
+
+These requirements are mandatory.
+
+1. Develop a genuine Native Android application.
+2. Use Kotlin as the primary programming language.
+3. Use Jetpack Compose for modern Android UI.
+4. Support Android 13 and newer versions.
+5. Use a minimum SDK of API 33.
+6. Use modern Android storage access through Storage Access Framework and MediaStore.
+7. The complete application must work offline.
+8. No login, signup, registration or authentication.
+9. No Firebase.
+10. No cloud database.
+11. No Gemini API dependency inside the finished application.
+12. No internet-based media processing.
+13. No advertising SDK.
+14. No analytics SDK.
+15. No tracking or telemetry.
+16. No unnecessary background services.
+17. No hidden data collection.
+18. No subscription or premium locking.
+19. No watermark on exported videos.
+20. No artificial limitation on project duration or number of editing layers, except genuine device-resource limitations.
+
+Use only locally available libraries and processing engines.
+
+Do not include the INTERNET permission in the final application unless a genuine mandatory technical requirement exists. The preferred final implementation must not request it.
+
+All media, projects, fonts, stickers, presets and editing resources must be handled locally.
+
+---
+
+# 3. APPLICATION BRANDING AND LOGO
+
+Application name: **ZUVYRA**
+
+Developer credit: **SURESH DIDEL**
+
+I will provide the final application logo/icon separately.
+
+Mandatory logo instructions:
+
+- Use my supplied ZUVYRA logo as the default application icon.
+- Do not redesign, modify, recolour or replace the supplied logo.
+- Use the supplied logo for the splash screen and application branding.
+- Generate Android adaptive icon assets using the provided artwork while preserving its appearance.
+- Maintain proper resolution and safe-area placement.
+- Use the same branding consistently throughout the application.
+
+Do not use the logos, names, fonts, proprietary artwork or copyrighted assets of other editing applications.
+
+Create an original ZUVYRA visual identity.
+
+---
+
+# 4. PROFESSIONAL UI/UX DESIGN
+
+Create a premium, modern and sophisticated interface.
+
+The application should feel like a professional mobile editing studio.
+
+### Design characteristics
+
+- Premium dark interface by default.
+- Deep charcoal and dark graphite backgrounds.
+- Subtle purple, violet and blue accent colours.
+- Elegant gradients used sparingly.
+- Professional typography.
+- Smooth animations.
+- Beautiful icons.
+- Consistent spacing.
+- Rounded panels and controls.
+- Excellent contrast.
+- Responsive layouts.
+- Minimal visual clutter.
+
+Do not make the interface unnecessarily complicated.
+
+The interface should be powerful but intuitive.
+
+### Main navigation
+
+Create these main sections:
+
+1. Home
+2. Projects
+3. Editor
+4. Media
+5. Settings
+
+Use a professional bottom navigation or suitable navigation architecture.
+
+The main editing screen should have a dedicated professional layout rather than looking like an ordinary Android form.
+
+### Theme options
+
+Provide:
+
+- Dark mode.
+- Light mode.
+- Follow system theme.
+
+Remember the selected theme locally.
+
+---
+
+# 5. HOME SCREEN
+
+Create a professional home dashboard.
+
+Include:
+
+- ZUVYRA logo.
+- Application name.
+- New Project button.
+- Recent Projects.
+- Continue Editing.
+- Import Media.
+- Open Project.
+- Project management.
+- Application settings.
+
+Display recent projects with:
+
+- Project thumbnail.
+- Project name.
+- Project resolution.
+- Frame rate.
+- Last modified date.
+- Project duration.
+
+Provide project actions:
+
+- Open.
+- Rename.
+- Duplicate.
+- Delete.
+- Share project package locally.
+- View project information.
+
+Add a confirmation dialog before permanently deleting projects.
+
+Support automatic project saving and recovery after unexpected application closure.
+
+---
+
+# 6. MEDIA IMPORT SYSTEM
+
+Create a powerful and flexible media import system.
+
+Support importing:
+
+### Video formats
+
+- MP4
+- MOV
+- MKV
+- WebM
+- 3GP
+- Other formats supported by the device's available decoders.
+
+### Image formats
+
+- JPG
+- JPEG
+- PNG
+- WEBP
+- BMP
+- GIF where supported.
+
+### Audio formats
+
+- MP3
+- WAV
+- AAC
+- M4A
+- FLAC
+- OGG
+- Other locally decodable formats.
+
+### Import sources
+
+- Internal storage.
+- Downloads.
+- DCIM.
+- Movies.
+- Pictures.
+- Music.
+- Documents.
+- User-selected folders.
+- Android document picker.
+- MediaStore gallery.
+
+### Import functionality
+
+- Multiple file selection.
+- Select all.
+- Deselect all.
+- File previews.
+- Thumbnail generation.
+- File information.
+- Import progress.
+- Import cancellation.
+- Duplicate file handling.
+- Unsupported format detection.
+- Clear error messages.
+
+Preserve access to user-selected files through Android-supported URI permissions.
+
+Never unnecessarily duplicate original media files.
+
+---
+
+# 7. PROFESSIONAL VIDEO EDITOR WORKSPACE
+
+This is the most important part of ZUVYRA.
+
+Create a genuine professional multi-track editing workspace.
+
+The editor must contain:
+
+### Preview area
+
+- Large video preview.
+- Play/pause.
+- Previous frame.
+- Next frame.
+- Jump to beginning.
+- Jump to end.
+- Current playback time.
+- Total duration.
+- Preview quality selector.
+- Full-screen preview.
+- Aspect ratio preview.
+- Safe-area guides.
+- Grid and alignment guides.
+
+### Timeline
+
+Implement a professional horizontal timeline.
+
+Support:
+
+- Multiple video tracks.
+- Multiple image tracks.
+- Multiple text tracks.
+- Multiple sticker and graphic tracks.
+- Multiple audio tracks.
+- Overlay tracks.
+- Independent layer positioning.
+- Track visibility.
+- Track locking.
+- Track muting.
+- Track reordering.
+- Track duplication.
+- Track deletion.
+- Clip splitting.
+- Clip trimming.
+- Clip repositioning.
+- Clip duplication.
+- Clip replacement.
+- Clip grouping where appropriate.
+- Timeline zoom in/out.
+- Frame-level precision.
+- Snap-to-clip.
+- Playhead positioning.
+- Timeline scrolling.
+- Multi-selection.
+- Drag-and-drop editing.
+
+Use a clearly visible playhead and accurate timeline ruler.
+
+The user must be able to move the playhead precisely.
+
+### Finger gesture controls
+
+Implement natural touchscreen gestures:
+
+- Pinch to zoom the timeline.
+- Drag clips to reposition.
+- Drag clip edges to trim.
+- Long press to select.
+- Swipe to navigate.
+- Drag multiple selected layers.
+- Finger-based multi-selection.
+- Drag handles for resizing and transformation.
+
+The timeline must remain responsive even with complex projects.
+
+---
+
+# 8. VIDEO CLIP EDITING
+
+Implement the following functional tools:
+
+- Trim.
+- Split.
+- Cut.
+- Delete.
+- Duplicate.
+- Replace.
+- Reverse.
+- Freeze frame.
+- Extract audio.
+- Detach audio.
+- Crop.
+- Rotate.
+- Flip horizontally.
+- Flip vertically.
+- Resize.
+- Fit.
+- Fill.
+- Speed adjustment.
+- Speed curve.
+- Volume adjustment.
+- Fade in.
+- Fade out.
+- Opacity adjustment.
+- Clip positioning.
+- Clip duration adjustment.
+
+Provide accurate clip-level controls.
+
+All editing operations must be non-destructive.
+
+Original media files must never be modified.
+
+---
+
+# 9. TRANSFORMATION AND MOTION CONTROLS
+
+Provide professional transformation controls:
+
+- Position X.
+- Position Y.
+- Scale X.
+- Scale Y.
+- Rotation.
+- Anchor point.
+- Width.
+- Height.
+- Opacity.
+- Horizontal alignment.
+- Vertical alignment.
+
+Include convenient sliders and numeric input fields.
+
+Provide a transformation reset button.
+
+### Keyframe animation
+
+Implement a functional keyframe system.
+
+Support keyframes for:
+
+- Position.
+- Scale.
+- Rotation.
+- Opacity.
+- Volume.
+- Text properties.
+- Sticker properties.
+- Layer transformation.
+- Other supported animatable parameters.
+
+Include:
+
+- Add keyframe.
+- Remove keyframe.
+- Previous keyframe.
+- Next keyframe.
+- Copy keyframe.
+- Paste keyframe.
+- Move keyframe.
+- Keyframe interpolation.
+
+### Animation easing
+
+Provide:
+
+- Linear.
+- Ease In.
+- Ease Out.
+- Ease In-Out.
+- Cubic Bézier.
+- Custom curve editor.
+
+The animation must interpolate smoothly between keyframes.
+
+---
+
+# 10. IN ANIMATION, OVERALL ANIMATION AND OUT ANIMATION
+
+Create a dedicated animation panel.
+
+### In Animation
+
+Include practical presets such as:
+
+- Fade In.
+- Zoom In.
+- Slide Left.
+- Slide Right.
+- Slide Up.
+- Slide Down.
+- Rotate In.
+- Pop In.
+- Scale In.
+- Bounce In.
+- Blur In.
+
+### Overall Animation
+
+Include:
+
+- Pulse.
+- Floating.
+- Breathing.
+- Wobble.
+- Shake.
+- Continuous Rotation.
+- Zoom Loop.
+- Gentle Movement.
+
+### Out Animation
+
+Include:
+
+- Fade Out.
+- Zoom Out.
+- Slide Left.
+- Slide Right.
+- Slide Up.
+- Slide Down.
+- Rotate Out.
+- Scale Out.
+- Blur Out.
+
+Every preset must have adjustable duration and intensity where applicable.
+
+Allow users to customize animations through keyframes.
+
+Do not make presets dependent on online downloads.
+
+---
+
+# 11. SPEED CONTROL AND SPEED CURVE
+
+Implement professional speed control.
+
+### Standard speed
+
+Support a practical range from 0.1x to 16x, subject to source format and device processing capability.
+
+### Speed curve editor
+
+Provide:
+
+- Linear speed.
+- Montage.
+- Hero.
+- Bullet.
+- Jump Cut.
+- Custom curve.
+
+Allow users to create custom speed ramps.
+
+Support adjustable curve points.
+
+Show a visual speed graph.
+
+Preserve audio pitch where technically supported.
+
+Provide separate options for audio handling during speed changes.
+
+Ensure the final rendered video follows the actual speed curve, not just the preview.
+
+---
+
+# 12. TEXT AND HANDWRITING EDITOR
+
+Create a comprehensive professional text editor.
+
+### Text features
+
+- Add text.
+- Edit text.
+- Duplicate text.
+- Delete text.
+- Text positioning.
+- Text resizing.
+- Text rotation.
+- Text alignment.
+- Letter spacing.
+- Line spacing.
+- Text opacity.
+
+### Font customization
+
+Support:
+
+- System fonts.
+- Imported TTF fonts.
+- Imported OTF fonts.
+- English fonts.
+- Hindi fonts.
+- Devanagari fonts.
+- Custom user fonts.
+
+### Text styling
+
+Include:
+
+- Solid colour.
+- Gradient colour.
+- Texture fills where locally available.
+- Stroke.
+- Outline.
+- Shadow.
+- Glow.
+- Background colour.
+- Background opacity.
+- Rounded background.
+- Padding.
+- Border.
+- Alignment.
+- Bold.
+- Italic.
+- Underline.
+
+### Text effects
+
+Provide:
+
+- Fade.
+- Typewriter.
+- Pop.
+- Bounce.
+- Slide.
+- Zoom.
+- Reveal.
+
+### Handwriting
+
+Implement a handwriting/drawing tool.
+
+Allow users to draw directly on the video preview using their finger or stylus.
+
+Support:
+
+- Brush size.
+- Brush colour.
+- Opacity.
+- Eraser.
+- Undo.
+- Redo.
+- Stroke smoothing.
+- Multiple drawing layers.
+- Drawing duration.
+- Drawing animation where supported.
+
+Handwriting must remain editable as a separate layer.
+
+---
+
+# 13. STICKERS AND GRAPHICS
+
+Create a local sticker and graphic library.
+
+Include:
+
+- Basic shapes.
+- Arrows.
+- Lines.
+- Circles.
+- Rectangles.
+- Stars.
+- Speech bubbles.
+- Decorative elements.
+- Emojis.
+- Locally bundled original stickers.
+
+Support importing personal PNG and WEBP stickers.
+
+Provide:
+
+- Position.
+- Scale.
+- Rotation.
+- Opacity.
+- Animation.
+- Shadow.
+- Stroke.
+- Duplicate.
+- Replace.
+- Delete.
+
+Allow users to create their own sticker collections from imported files.
+
+No online sticker store or downloads.
+
+---
+
+# 14. VIDEO EFFECTS
+
+Build a practical professional effects library.
+
+Include standard and moderately advanced effects:
+
+- Gaussian Blur.
+- Motion Blur.
+- Directional Blur.
+- Glow.
+- Sharpen.
+- Vignette.
+- Film Grain.
+- Noise.
+- Pixelate.
+- Mosaic.
+- RGB Split.
+- Chromatic Aberration.
+- Light Leak.
+- Glow Bloom.
+- Basic Distortion.
+- Fade.
+- Soft Focus.
+- Mirror.
+- Flip.
+- Zoom Blur.
+- Basic Shake.
+
+Provide adjustable parameters for each effect.
+
+Allow multiple compatible effects to be applied in sequence.
+
+Include:
+
+- Effect intensity.
+- Effect duration.
+- Effect ordering.
+- Effect enable/disable.
+- Effect duplication.
+- Effect removal.
+- Keyframe animation where supported.
+
+Use GPU acceleration wherever appropriate.
+
+Do not implement cloud-dependent AI effects.
+
+---
+
+# 15. TRANSITIONS
+
+Create a practical transition library.
+
+Include:
+
+- Fade.
+- Dissolve.
+- Crossfade.
+- Zoom In.
+- Zoom Out.
+- Slide Left.
+- Slide Right.
+- Slide Up.
+- Slide Down.
+- Wipe.
+- Push.
+- Blur Transition.
+- Spin.
+- Flash.
+- Simple Glitch.
+- Dip to Black.
+- Dip to White.
+
+Allow adjustable:
+
+- Duration.
+- Direction.
+- Intensity.
+- Transition timing.
+
+Transitions must be applied correctly between adjacent clips.
+
+The timeline must display transition regions clearly.
+
+Provide smooth preview and accurate final rendering.
+
+---
+
+# 16. BLENDING, STROKE, BORDER AND SHADOW
+
+### Blending modes
+
+Provide commonly useful blending modes:
+
+- Normal.
+- Multiply.
+- Screen.
+- Overlay.
+- Darken.
+- Lighten.
+- Add.
+- Difference.
+- Soft Light.
+- Hard Light.
+
+Ensure actual compositing behaviour.
+
+### Stroke and outline
+
+Provide:
+
+- Stroke width.
+- Stroke colour.
+- Stroke opacity.
+- Inner and outer outline where supported.
+
+### Border
+
+Provide:
+
+- Border thickness.
+- Border colour.
+- Border opacity.
+- Corner radius where appropriate.
+
+### Shadow
+
+Provide:
+
+- Shadow colour.
+- Shadow opacity.
+- Blur.
+- Distance.
+- Angle.
+- X offset.
+- Y offset.
+
+### Glow
+
+Provide:
+
+- Glow colour.
+- Glow intensity.
+- Glow radius.
+- Glow opacity.
+
+---
+
+# 17. COLOUR ADJUSTMENT AND FILTERS
+
+Create a professional colour correction panel.
+
+Include:
+
+- Brightness.
+- Contrast.
+- Saturation.
+- Exposure.
+- Temperature.
+- Tint.
+- Highlights.
+- Shadows.
+- Whites.
+- Blacks.
+- Fade.
+- Sharpness.
+- Vignette.
+- HSL adjustments.
+
+Provide individual HSL controls for:
+
+- Red.
+- Orange.
+- Yellow.
+- Green.
+- Cyan.
+- Blue.
+- Purple.
+- Magenta.
+
+### Filters
+
+Provide original built-in filters:
+
+- Cinematic.
+- Warm.
+- Cool.
+- Vintage.
+- Retro.
+- Black and White.
+- Portrait.
+- Landscape.
+- Film.
+- Soft.
+- Dramatic.
+
+Include filter intensity sliders.
+
+Allow importing compatible LUT files such as .cube where supported.
+
+Users must be able to save custom filter presets locally.
+
+---
+
+# 18. AUDIO EDITING STUDIO
+
+Create a dedicated professional audio editing workspace.
+
+### Audio import
+
+Support local audio imports.
+
+### Audio controls
+
+- Volume.
+- Fade In.
+- Fade Out.
+- Trim.
+- Split.
+- Duplicate.
+- Reverse.
+- Detach audio.
+- Replace audio.
+- Audio positioning.
+- Audio duration.
+- Audio synchronization.
+
+### Audio Mixer
+
+Implement a proper multi-track audio mixer.
+
+Each track should have:
+
+- Independent volume.
+- Mute.
+- Solo.
+- Pan where supported.
+- Track name.
+- Track visibility.
+- Audio waveform.
+
+### Volume Envelope
+
+Implement an editable volume automation curve.
+
+Allow multiple control points.
+
+Users should be able to increase or decrease volume gradually over time.
+
+### Equalizer
+
+Include:
+
+- Bass.
+- Mid.
+- Treble.
+- Low-pass.
+- High-pass.
+- Graphic EQ presets.
+
+### Audio effects
+
+Include:
+
+- Reverb.
+- Echo.
+- Delay.
+- Fade.
+- Basic noise reduction.
+- Pitch adjustment where supported.
+
+### Recording
+
+Provide an in-app voice recording tool.
+
+Support:
+
+- Microphone permission handling.
+- Recording timer.
+- Pause.
+- Resume.
+- Stop.
+- Playback.
+- Rename.
+- Delete.
+- Add recording directly to the timeline.
+
+Recording must work offline.
+
+### Noise reduction
+
+Provide lightweight offline noise reduction where practical.
+
+Do not depend on online AI models or external services.
+
+If high-quality denoising cannot be achieved on a device, show a clear limitation rather than pretending the operation succeeded.
+
+---
+
+# 19. EXPORT AND RENDERING ENGINE
+
+This is one of the highest-priority components.
+
+Develop a genuine professional export engine.
+
+### Export formats
+
+Support:
+
+- MP4.
+- MOV where supported by the selected encoder/muxer.
+- GIF.
+- Image sequence export where practical.
+
+### Video codecs
+
+- H.264 / AVC.
+- H.265 / HEVC where supported.
+- VP9 where supported.
+
+### Audio codecs
+
+- AAC.
+- Other compatible audio codecs where supported by the selected container.
+
+### Resolution options
+
+- 360p.
+- 480p.
+- 720p HD.
+- 1080p Full HD.
+- 1440p QHD.
+- 2160p 4K UHD.
+- Original resolution.
+
+### Aspect ratios
+
+- 16:9.
+- 9:16.
+- 1:1.
+- 4:5.
+- 5:4.
+- 4:3.
+- 3:4.
+- 21:9.
+- Custom ratio.
+
+### Frame rate
+
+Provide:
+
+- 24 FPS.
+- 25 FPS.
+- 30 FPS.
+- 50 FPS.
+- 60 FPS.
+- Source frame rate where supported.
+
+### Bitrate
+
+Provide:
+
+- Low.
+- Medium.
+- High.
+- Very High.
+- Custom bitrate.
+
+Show an estimated file size before export.
+
+### Export interface
+
+Include:
+
+- Export resolution.
+- Frame rate.
+- Codec.
+- Bitrate.
+- Audio quality.
+- Output format.
+- Estimated file size.
+- Export progress.
+- Export cancellation.
+- Export completion.
+- Open exported video.
+- Share exported video.
+- Export history.
+
+### Rendering requirements
+
+Implement:
+
+- Hardware-accelerated encoding.
+- Hardware-accelerated decoding.
+- GPU-based effects where practical.
+- Efficient memory management.
+- Rendering queue.
+- Background rendering where supported.
+- Export recovery.
+- Temporary-file cleanup.
+- Storage-space checks.
+- Rendering progress reporting.
+
+Never claim an export has completed until the file has actually been finalized and verified.
+
+Use MediaCodec, MediaMuxer, MediaExtractor and suitable local rendering libraries as appropriate.
+
+Evaluate Media3 Transformer and OpenGL ES or Vulkan-based processing for the rendering architecture.
+
+Do not rely on deprecated APIs or assume every codec and resolution is supported on every device.
+
+---
+
+# 20. PROJECT MANAGEMENT AND AUTO-SAVE
+
+Implement a reliable local project system.
+
+Every project must save:
+
+- Timeline arrangement.
+- Media references.
+- Clip positions.
+- Clip durations.
+- Effects.
+- Filters.
+- Keyframes.
+- Audio settings.
+- Text.
+- Stickers.
+- Transitions.
+- Export settings.
+- Project resolution.
+- Frame rate.
+
+Use a structured project file format.
+
+Implement:
+
+- Automatic saving.
+- Manual save.
+- Save As.
+- Project duplication.
+- Project rename.
+- Project recovery.
+- Undo.
+- Redo.
+- Undo history.
+- Crash recovery.
+
+The project must reopen with its previous editing state intact.
+
+Use a non-destructive editing architecture.
+
+Do not overwrite original video, image or audio files.
+
+---
+
+# 21. PERFORMANCE AND OPTIMIZATION
+
+ZUVYRA must prioritize speed and stability.
+
+Use professional performance engineering.
+
+### Requirements
+
+- Fast application startup.
+- Fast media browsing.
+- Efficient thumbnail caching.
+- Background media loading.
+- Lazy loading.
+- Smooth scrolling.
+- Responsive timeline gestures.
+- Efficient preview rendering.
+- Optimized memory usage.
+- Avoid unnecessary bitmap allocations.
+- Avoid repeated decoding.
+- Proper thread management.
+- Hardware acceleration.
+- Cache management.
+- Automatic cleanup of abandoned temporary files.
+
+### Adaptive performance
+
+Detect available device capabilities.
+
+Adapt preview quality, rendering resolution and processing strategies based on:
+
+- RAM.
+- CPU.
+- GPU.
+- Hardware codecs.
+- Storage availability.
+- Thermal condition.
+
+When a device cannot smoothly preview a complex 4K project, automatically use a lower-resolution preview while preserving the original export quality.
+
+Never compromise source media quality merely to improve preview performance.
+
+Avoid application crashes during long rendering operations.
+
+Do not promise impossible rendering speeds. Optimize for the best achievable performance on each supported device.
+
+---
+
+# 22. FEATURES INTENTIONALLY EXCLUDED
+
+Do not implement the following features in this version:
+
+- Chroma Key.
+- Alpha Key.
+- Advanced background removal.
+- AI voice separation.
+- AI vocal separation.
+- Advanced AI noise removal.
+- Camera tracking.
+- 3D camera motion.
+- Null objects/tools.
+- Complex 3D compositing.
+- Cloud AI editing.
+- Online asset marketplaces.
+- Online templates.
+- Cloud project synchronization.
+- Social networking features.
+
+Keep the editing system focused on professional conventional video editing, multi-layer editing, animation, effects, audio and export.
+
+Do not add complicated professional tools that make the application unnecessarily difficult to use.
+
+---
+
+# 23. PRIVACY AND SECURITY
+
+Privacy is non-negotiable.
+
+ZUVYRA is a private personal application.
+
+Requirements:
+
+- No account.
+- No login.
+- No registration.
+- No tracking.
+- No analytics.
+- No advertisements.
+- No cloud storage.
+- No external API calls.
+- No unnecessary permissions.
+- No hidden data transmission.
+- No background internet activity.
+
+All editing projects and media processing must remain on the device.
+
+Use Android's modern permission system.
+
+Request microphone access only when the user uses recording.
+
+Request access to media only through appropriate Android permission or file-picker mechanisms.
+
+---
+
+# 24. SETTINGS AND CUSTOMIZATION
+
+Create a complete settings section.
+
+Include:
+
+### Appearance
+- Dark theme.
+- Light theme.
+- System theme.
+- Accent colour.
+- Interface density where practical.
+
+### Editor settings
+- Default project resolution.
+- Default frame rate.
+- Default aspect ratio.
+- Timeline snapping.
+- Default preview quality.
+- Auto-save interval.
+- Default export location.
+
+### Performance settings
+- Preview quality.
+- Thumbnail cache size.
+- Cache clearing.
+- Rendering preferences.
+- Background processing preferences.
+
+### Storage
+- Application storage usage.
+- Project storage.
+- Cache storage.
+- Export storage.
+- Clear temporary files.
+
+### About ZUVYRA
+- Application name.
+- Version.
+- Developer: SURESH DIDEL.
+- Privacy information.
+- Licences and third-party acknowledgements.
+
+---
+
+# 25. TECHNICAL ARCHITECTURE
+
+Build a maintainable, modular application.
+
+Use a suitable architecture such as Clean Architecture with MVVM.
+
+Suggested modules:
+
+1. app
+2. core
+3. core-ui
+4. core-media
+5. media-import
+6. editor
+7. timeline
+8. playback
+9. rendering
+10. audio
+11. animation
+12. effects
+13. project-storage
+14. export
+15. settings
+
+Use appropriate Android libraries and frameworks.
+
+Recommended technologies:
+
+- Kotlin.
+- Jetpack Compose.
+- Coroutines.
+- Flow.
+- Android Media3.
+- MediaCodec.
+- MediaExtractor.
+- MediaMuxer.
+- MediaStore.
+- Storage Access Framework.
+- OpenGL ES.
+- Room for local metadata where appropriate.
+- DataStore for preferences.
+
+Select a stable and compatible dependency set.
+
+Do not add libraries simply for appearance.
+
+For every dependency, verify Android 13+ compatibility, offline operation, licence and maintenance status.
+
+The final application must not require a backend.
+
+---
+
+# 26. FUNCTIONAL TESTING
+
+Test the application thoroughly.
+
+### Media tests
+- Import video.
+- Import image.
+- Import audio.
+- Import multiple files.
+- Import large files.
+- Handle unsupported formats.
+- Handle inaccessible files.
+
+### Timeline tests
+- Add multiple layers.
+- Move clips.
+- Trim clips.
+- Split clips.
+- Duplicate clips.
+- Delete clips.
+- Reorder tracks.
+- Multi-select layers.
+- Zoom timeline.
+- Undo and redo.
+
+### Editing tests
+- Apply filters.
+- Apply effects.
+- Add transitions.
+- Add text.
+- Add handwriting.
+- Add stickers.
+- Apply keyframes.
+- Change speed.
+- Reverse clips.
+- Adjust audio.
+
+### Export tests
+- Export 720p.
+- Export 1080p.
+- Export 4K where supported.
+- Export at different frame rates.
+- Export with different bitrates.
+- Verify audio-video synchronization.
+- Verify transition rendering.
+- Verify animation rendering.
+- Verify final duration.
+- Verify output file integrity.
+
+### Stability tests
+- Close and reopen application.
+- Recover interrupted projects.
+- Test low-storage situations.
+- Test memory pressure.
+- Test long editing sessions.
+- Test large media files.
+- Test Android 13 and newer versions.
+
+Do not mark a feature complete until it has passed a meaningful functional test.
+
+---
+
+# 27. DEVELOPMENT EXECUTION STRATEGY
+
+Do not attempt to build the entire application as a single superficial screen.
+
+Develop it in structured stages while maintaining one consistent project architecture.
+
+### Phase 1 – Application foundation
+- Native project setup.
+- Branding.
+- Splash screen.
+- Home screen.
+- Navigation.
+- Settings.
+- Offline project storage.
+
+### Phase 2 – Media management
+- Import system.
+- Media browser.
+- Thumbnail generation.
+- File handling.
+
+### Phase 3 – Editing engine
+- Preview player.
+- Multi-track timeline.
+- Clip editing.
+- Touch gestures.
+- Timeline precision.
+
+### Phase 4 – Professional editing
+- Transformation.
+- Keyframes.
+- Speed curves.
+- Text.
+- Handwriting.
+- Stickers.
+- Animation presets.
+
+### Phase 5 – Visual editing
+- Filters.
+- Colour adjustments.
+- Effects.
+- Transitions.
+- Blending.
+- Borders.
+- Stroke.
+- Glow.
+- Shadow.
+
+### Phase 6 – Audio studio
+- Audio tracks.
+- Mixer.
+- Volume envelope.
+- Equalizer.
+- Recording.
+- Audio effects.
+- Basic noise reduction.
+
+### Phase 7 – Rendering
+- Export engine.
+- Resolution settings.
+- Frame rate.
+- Bitrate.
+- Hardware acceleration.
+- Export recovery.
+
+### Phase 8 – Final optimization
+- Performance testing.
+- Bug fixing.
+- Memory optimization.
+- Storage optimization.
+- UI polishing.
+- Compatibility testing.
+
+Each phase must build upon the previous phase.
+
+Do not discard working modules when implementing new features.
+
+---
+
+# 28. CRITICAL DEVELOPMENT RULES
+
+These instructions are especially important.
+
+1. Never create a non-functional UI just to make the application look complete.
+2. Never display an editing option that has no working implementation.
+3. Never simulate rendering progress.
+4. Never use fake media thumbnails.
+5. Never create buttons that do nothing.
+6. Never use hardcoded sample projects as actual user projects.
+7. Never overwrite original media.
+8. Never lose project data after application restart.
+9. Never sacrifice timeline accuracy for visual appearance.
+10. Never allow audio and video synchronization to drift.
+11. Never make the application dependent on internet access.
+12. Never silently ignore unsupported media formats.
+13. Never crash when a user selects a large file.
+14. Never remove an existing working feature while adding another.
+15. Always maintain backward compatibility for saved project files when updating the application.
+16. Implement proper error handling and logging locally without collecting user data.
+
+When a requested feature cannot be implemented reliably using the available APIs, explain the technical limitation and implement the best genuine offline alternative.
+
+---
+
+# 29. FINAL DELIVERABLE
+
+Deliver a complete native Android Studio-compatible project.
+
+The final deliverable must include:
+
+- Complete Kotlin source code.
+- Jetpack Compose UI.
+- All required modules.
+- All required resources.
+- App icon and branding integration.
+- Required local dependencies.
+- AndroidManifest.xml.
+- Gradle configuration.
+- Project storage implementation.
+- Functional media import.
+- Functional timeline.
+- Functional editing tools.
+- Functional rendering engine.
+- Export functionality.
+- Error handling.
+- Documentation.
+- Build instructions.
+- Installable APK generation.
+
+The application must install and operate on Android 13 and newer supported Android devices.
+
+Provide a debug APK for initial testing and a release-ready build configuration.
+
+Do not call the application production-ready until its core features have been implemented and tested.
+
+---
+
+# 30. FINAL QUALITY EXPECTATION
+
+The final application should feel like a combination of:
+
+- Alight Motion's animation flexibility.
+- KineMaster's professional editing workflow.
+- CapCut's intuitive editing experience.
+- InShot's simplicity.
+- VN's timeline and non-destructive editing.
+
+But ZUVYRA must remain original, lightweight, privacy-focused and completely offline.
+
+The application must have a premium design, smooth performance, accurate editing, reliable project saving and high-quality rendering.
+
+**My vision is to create a personal mobile video-editing studio that gives me maximum creative control without advertisements, subscriptions, accounts, internet dependency or unnecessary complications.**
+
+**Application Name: ZUVYRA**
+
+**Developed by: SURESH DIDEL**
+
+Build the actual working application, not merely a design prototype.
+
+Start by creating the native Android project and implementing Phase 1. Continue through the development phases, preserving the architecture and all completed functionality. Verify each stage before proceeding.
+
+If the complete scope exceeds one generation or implementation session, continue in manageable development stages rather than omitting important functionality or pretending it has been completed.
+
+**FINAL INSTRUCTION: FUNCTIONALITY, EDITING ACCURACY, PERFORMANCE, STABILITY AND USER PRIVACY ARE MORE IMPORTANT THAN SIMPLY MAKING THE APPLICATION LOOK BEAUTIFUL.**

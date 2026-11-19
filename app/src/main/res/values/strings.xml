@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ZUVYRA</string>
+    <string name="developer_credit">Developed by SURESH DIDEL</string>
+    <string name="app_tagline">Offline Professional Video Studio</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_editor">Editor</string>
+    <string name="nav_media">Media</string>
+    <string name="nav_settings">Settings</string>
+</resources>
